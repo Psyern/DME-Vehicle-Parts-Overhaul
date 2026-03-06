@@ -1,17 +1,30 @@
-static void VehiclePlusApplyHealthSettings(ItemBase item, float desiredHealth)
+static void VehiclePlusApplyHealthSettings(ItemBase item, float desiredMax)
 {
-	if (!GetGame().IsServer() || !item || desiredHealth <= 0)
+	if (!GetGame().IsServer() || !item || desiredMax <= 0)
 	{
 		return;
 	}
 
 	float configMax = item.GetMaxHealth("", "Health");
-	if (desiredHealth > configMax)
+	if (configMax <= 0)
 	{
-		desiredHealth = configMax;
+		return;
 	}
 
-	item.SetHealth("", "Health", desiredHealth);
+	// Preserve the item's current health percentage so existing items
+	// don't appear broken after the mod raises max hitpoints.
+	// Example: 50% of old 250 HP = 125 HP  ->  50% of new 20000 HP = 10000 HP
+	float healthPct = item.GetHealth01("", "Health");
+
+	// Cap the target max to what config.cpp actually defines.
+	float effectiveMax = desiredMax;
+	if (effectiveMax > configMax)
+	{
+		effectiveMax = configMax;
+	}
+
+	float newHealth = healthPct * effectiveMax;
+	item.SetHealth("", "Health", newHealth);
 }
 
 modded class CarBattery

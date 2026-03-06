@@ -21,7 +21,7 @@ class VehiclePlusConfig
 
 class VehiclePlusConfigManager
 {
-	private static const int CURRENT_CONFIG_VERSION = 1;
+	private static const int CURRENT_CONFIG_VERSION = 2;
 	private static const string DIRECTORY_ROOT = "$profile:DeadmansEcho";
 	private static const string DIRECTORY_CONFIG = "$profile:DeadmansEcho\\VehiclePlus";
 	private static const string CONFIG_PATH = "$profile:DeadmansEcho\\VehiclePlus\\VehiclePlus.json";
@@ -54,14 +54,37 @@ class VehiclePlusConfigManager
 		ref VehiclePlusConfig loadedConfig = new VehiclePlusConfig();
 		JsonFileLoader<VehiclePlusConfig>.JsonLoadFile(CONFIG_PATH, loadedConfig);
 
-		if (!loadedConfig || loadedConfig.ConfigVersion != CURRENT_CONFIG_VERSION)
+		if (!loadedConfig)
 		{
 			s_Config = new VehiclePlusConfig();
 			Save();
 			return;
 		}
 
-		// Accept loaded config.
+		if (loadedConfig.ConfigVersion != CURRENT_CONFIG_VERSION)
+		{
+			// Migrate: keep existing values, fill missing fields with defaults.
+			s_Config = new VehiclePlusConfig();
+			s_Config.CarBattery = loadedConfig.CarBattery;
+			s_Config.TruckBattery = loadedConfig.TruckBattery;
+			s_Config.SparkPlug = loadedConfig.SparkPlug;
+			s_Config.GlowPlug = loadedConfig.GlowPlug;
+			s_Config.CarRadiator = loadedConfig.CarRadiator;
+			s_Config.SparkPlugPlus = loadedConfig.SparkPlugPlus;
+			s_Config.GlowPlugPlus = loadedConfig.GlowPlugPlus;
+			s_Config.Battery9V_LL = loadedConfig.Battery9V_LL;
+			s_Config.Battery9V_Radioactive = loadedConfig.Battery9V_Radioactive;
+			s_Config.TruckBattery_Duracell = loadedConfig.TruckBattery_Duracell;
+			s_Config.CarBattery_LL = loadedConfig.CarBattery_LL;
+			s_Config.CarBattery_Interstate = loadedConfig.CarBattery_Interstate;
+			s_Config.CarBattery_Kia = loadedConfig.CarBattery_Kia;
+			s_Config.CarBattery_Kia2 = loadedConfig.CarBattery_Kia2;
+			s_Config.CarBattery_Subaru = loadedConfig.CarBattery_Subaru;
+			s_Config.CarBattery_NeverDies = loadedConfig.CarBattery_NeverDies;
+			Save();
+			return;
+		}
+
 		s_Config = loadedConfig;
 	}
 
