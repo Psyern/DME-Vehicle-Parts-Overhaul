@@ -1,0 +1,15 @@
+prefix=mb_batteries\
+obfuscated=фЬѓ.rtm
+
+
+===================================================================
+
+	Packer: PBO Tools v1.4.1
+	Website: https://pbo.tools
+	Discord: https://discord.pbo.tools
+	Version: B3X6Z34Ai6fCUm9huTATe887WIGsVd3O43/I0tzq+Ow=
+	Prefix: mb_batteries
+
+===================================================================
+
+=

@@ -1,0 +1,3 @@
+prefix=SparkPlugPlus\
+product=dayz ugc
+version=1
