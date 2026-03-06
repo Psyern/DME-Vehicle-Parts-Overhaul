@@ -366,6 +366,50 @@ class CfgVehicles
 			};
 		};
 	};
+
+	class ExpansionHelicopterBattery: Inventory_Base
+	{
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints = 50000;
+					healthLevels[] =
+					{
+						{1.0, {"DZ\vehicles\parts\data\battery_smallcar.rvmat"}},
+						{0.7, {"DZ\vehicles\parts\data\battery_smallcar.rvmat"}},
+						{0.5, {"DZ\vehicles\parts\data\battery_smallcar_damage.rvmat"}},
+						{0.3, {"DZ\vehicles\parts\data\battery_smallcar_damage.rvmat"}},
+						{0.0, {"DZ\vehicles\parts\data\battery_smallcar_destruct.rvmat"}}
+					};
+				};
+			};
+		};
+	};
+
+	class ExpansionAircraftBattery: Inventory_Base
+	{
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints = 50000;
+					healthLevels[] =
+					{
+						{1.0, {"DZ\vehicles\parts\data\battery_smallcar.rvmat"}},
+						{0.7, {"DZ\vehicles\parts\data\battery_smallcar.rvmat"}},
+						{0.5, {"DZ\vehicles\parts\data\battery_smallcar_damage.rvmat"}},
+						{0.3, {"DZ\vehicles\parts\data\battery_smallcar_damage.rvmat"}},
+						{0.0, {"DZ\vehicles\parts\data\battery_smallcar_destruct.rvmat"}}
+					};
+				};
+			};
+		};
+	};
 };
 
 class CfgMods

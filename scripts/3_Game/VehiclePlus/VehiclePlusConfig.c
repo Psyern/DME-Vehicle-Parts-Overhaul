@@ -17,11 +17,13 @@ class VehiclePlusConfig
 	float CarBattery_Kia2 = 50000.0;
 	float CarBattery_Subaru = 50000.0;
 	float CarBattery_NeverDies = 50000.0;
+	float ExpansionHelicopterBattery = 50000.0;
+	float ExpansionAircraftBattery = 50000.0;
 }
 
 class VehiclePlusConfigManager
 {
-	private static const int CURRENT_CONFIG_VERSION = 2;
+	private static const int CURRENT_CONFIG_VERSION = 3;
 	private static const string DIRECTORY_ROOT = "$profile:DeadmansEcho";
 	private static const string DIRECTORY_CONFIG = "$profile:DeadmansEcho\\VehiclePlus";
 	private static const string CONFIG_PATH = "$profile:DeadmansEcho\\VehiclePlus\\VehiclePlus.json";
@@ -81,6 +83,8 @@ class VehiclePlusConfigManager
 			s_Config.CarBattery_Kia2 = loadedConfig.CarBattery_Kia2;
 			s_Config.CarBattery_Subaru = loadedConfig.CarBattery_Subaru;
 			s_Config.CarBattery_NeverDies = loadedConfig.CarBattery_NeverDies;
+			s_Config.ExpansionHelicopterBattery = loadedConfig.ExpansionHelicopterBattery;
+			s_Config.ExpansionAircraftBattery = loadedConfig.ExpansionAircraftBattery;
 			Save();
 			return;
 		}
