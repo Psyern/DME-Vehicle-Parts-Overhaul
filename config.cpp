@@ -25,7 +25,7 @@ class CfgVehicles
 			{
 				class Health
 				{
-					hitpoints = 50000;
+					hitpoints = 5000;
 					healthLevels[] =
 					{
 						{1.0, {"DZ\vehicles\parts\data\battery_smallcar.rvmat"}},
@@ -47,7 +47,7 @@ class CfgVehicles
 			{
 				class Health
 				{
-					hitpoints = 80000;
+					hitpoints = 8000;
 					healthLevels[] =
 					{
 						{1.0, {"DZ\vehicles\parts\data\truck_bat.rvmat"}},
@@ -69,7 +69,7 @@ class CfgVehicles
 			{
 				class Health
 				{
-					hitpoints = 20000;
+					hitpoints = 2000;
 					healthLevels[] =
 					{
 						{1.0, {"DZ\vehicles\parts\data\sparkplug.rvmat"}},
@@ -91,7 +91,7 @@ class CfgVehicles
 			{
 				class Health
 				{
-					hitpoints = 20000;
+					hitpoints = 2000;
 					healthLevels[] =
 					{
 						{1.0, {"DZ\vehicles\parts\data\glowplug.rvmat"}},
@@ -113,7 +113,7 @@ class CfgVehicles
 			{
 				class Health
 				{
-					hitpoints = 60000;
+					hitpoints = 6000;
 					healthLevels[] =
 					{
 						{1.0, {"DZ\vehicles\parts\data\radiator_smallcar.rvmat"}},
@@ -135,7 +135,7 @@ class CfgVehicles
 			{
 				class Health
 				{
-					hitpoints = 200000;
+					hitpoints = 2000;
 					healthLevels[] =
 					{
 						{1.0, {"DZ\vehicles\parts\data\sparkplug.rvmat"}},
@@ -157,7 +157,7 @@ class CfgVehicles
 			{
 				class Health
 				{
-					hitpoints = 200000;
+					hitpoints = 2000;
 					healthLevels[] =
 					{
 						{1.0, {"DZ\vehicles\parts\data\glowplug.rvmat"}},
@@ -221,7 +221,7 @@ class CfgVehicles
 			{
 				class Health
 				{
-					hitpoints = 80000;
+					hitpoints = 8000;
 					healthLevels[] =
 					{
 						{1.0, {"DZ\vehicles\parts\data\truck_bat.rvmat"}},
@@ -243,7 +243,7 @@ class CfgVehicles
 			{
 				class Health
 				{
-					hitpoints = 50000;
+					hitpoints = 5000;
 					healthLevels[] =
 					{
 						{1.0, {"DZ\vehicles\parts\data\battery_smallcar.rvmat"}},
@@ -265,7 +265,7 @@ class CfgVehicles
 			{
 				class Health
 				{
-					hitpoints = 50000;
+					hitpoints = 5000;
 					healthLevels[] =
 					{
 						{1.0, {"DZ\vehicles\parts\data\battery_smallcar.rvmat"}},
@@ -287,7 +287,7 @@ class CfgVehicles
 			{
 				class Health
 				{
-					hitpoints = 50000;
+					hitpoints = 5000;
 					healthLevels[] =
 					{
 						{1.0, {"DZ\vehicles\parts\data\battery_smallcar.rvmat"}},
@@ -309,7 +309,7 @@ class CfgVehicles
 			{
 				class Health
 				{
-					hitpoints = 50000;
+					hitpoints = 5000;
 					healthLevels[] =
 					{
 						{1.0, {"DZ\vehicles\parts\data\battery_smallcar.rvmat"}},
@@ -331,7 +331,7 @@ class CfgVehicles
 			{
 				class Health
 				{
-					hitpoints = 50000;
+					hitpoints = 5000;
 					healthLevels[] =
 					{
 						{1.0, {"DZ\vehicles\parts\data\battery_smallcar.rvmat"}},
@@ -353,7 +353,7 @@ class CfgVehicles
 			{
 				class Health
 				{
-					hitpoints = 50000;
+					hitpoints = 5000;
 					healthLevels[] =
 					{
 						{1.0, {"DZ\vehicles\parts\data\battery_smallcar.rvmat"}},
@@ -375,7 +375,7 @@ class CfgVehicles
 			{
 				class Health
 				{
-					hitpoints = 50000;
+					hitpoints = 5000;
 					healthLevels[] =
 					{
 						{1.0, {"DZ\vehicles\parts\data\battery_smallcar.rvmat"}},
@@ -397,7 +397,7 @@ class CfgVehicles
 			{
 				class Health
 				{
-					hitpoints = 50000;
+					hitpoints = 5000;
 					healthLevels[] =
 					{
 						{1.0, {"DZ\vehicles\parts\data\battery_smallcar.rvmat"}},
